@@ -11,18 +11,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Smart Scanner',
       debugShowCheckedModeBanner: false,
 
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Router(
-        routerDelegate: AppRouter.router.routerDelegate,
-        routeInformationParser: AppRouter.router.routeInformationParser,
-        routeInformationProvider: AppRouter.router.routeInformationProvider,
-      ),
+
+      routerConfig: AppRouter.router,
     );
   }
 }

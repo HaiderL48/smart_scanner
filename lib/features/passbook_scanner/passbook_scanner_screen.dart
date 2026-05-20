@@ -152,6 +152,7 @@ class _PassbookScannerScreenState extends State<PassbookScannerScreen> {
     });
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF1A1A2E),
